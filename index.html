@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="A beautiful personal dashboard inspired by Momentum."
+    />
+
+    <title>Momentum</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script type="module" src="./js/index.js"></script>
+  </head>
+
+  <body>
+    <main class="app">
+      <!-- Top section -->
+      <header class="header">
+        <div class="date" id="date">Thursday, November 20</div>
+
+        <div class="weather" id="weather">
+          <span>☀️</span>
+          <span>Weather</span>
+        </div>
+      </header>
+
+      <!-- Main section -->
+      <section class="main-content">
+        <div class="clock" id="clock">09:13:00</div>
+
+        <div class="greeting">
+          <h1 id="greeting">Good morning</h1>
+
+          <div class="name-wrapper">
+            <span>,</span>
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your name"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <div class="focus">
+          <p>What is your main focus for today?</p>
+
+          <input
+            type="text"
+            id="focus-input"
+            placeholder=" "
+            autocomplete="off"
+          />
+        </div>
+      </section>
+
+      <!-- Quote section -->
+      <section class="quote-section">
+        <p id="quote">Your daily inspiration will appear here.</p>
+
+        <span id="quote-author"></span>
+      </section>
+
+      <!-- Bottom section -->
+      <footer class="footer">
+        <button id="settings-button">⚙ Settings</button>
+
+        <div class="audio-player" id="audio-player">
+          <span>♫</span>
+          <span>Music player</span>
+        </div>
+
+        <button id="todo-button">ToDo List</button>
+      </footer>
+    </main>
+  </body>
+</html>
